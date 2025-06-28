@@ -39,7 +39,7 @@ class CreateCoursePage(BasePage):
         self.create_course_min_score_input = page.get_by_test_id('create-course-form-min-score-input').locator('input')
 
         self.exercises_title = page.get_by_test_id('create-course-exercises-box-toolbar-title-text')
-        self.create_exercise_button = page.get_by_test_id('create-course-exercises- box-toolbar-create-exercise-button')
+        self.create_exercise_button = page.get_by_test_id('create-course-exercises-box-toolbar-create-exercise-button')
 
         self.exercises_empty_view_icon = page.get_by_test_id('create-course-exercises-empty-view-icon')
         self.exercises_empty_view_title = page.get_by_test_id('create-course-exercises-empty-view-title-text')
