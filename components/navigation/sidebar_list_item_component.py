@@ -9,7 +9,7 @@ class SidebarListItemComponent(BaseComponent):
     def __init__(self, page: Page, identifier: str):
         super().__init__(page)
 
-        self.icon = page.get_by_test_id(f'{identifier}-list-item-icon')
+        self.icon = page.get_by_test_id(f'{identifier}-drawer-list-item-icon')
         self.title = page.get_by_test_id(f'{identifier}-drawer-list-item-title-text')
         self.button = page.get_by_test_id(f'{identifier}-drawer-list-item-button')
 
