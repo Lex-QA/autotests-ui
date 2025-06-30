@@ -15,18 +15,18 @@ class ImageUploadWidgetComponent(BaseComponent):
 
         self.preview_empty_view = EmptyViewComponent(page, identifier)
 
-        self.preview_image = Image(page, '{identifier}-image-upload-widget-preview-image', 'Preview image')
+        self.preview_image = Image(page, f'{identifier}-image-upload-widget-preview-image', 'Preview image')
 
-        self.image_upload_info_icon = Icon(page, '{identifier}-image-upload-widget-info-icon', 'Upload info icon')
-        self.image_upload_info_title = Text(page, '{identifier}-image-upload-widget-info-title-text',
+        self.image_upload_info_icon = Icon(page, f'{identifier}-image-upload-widget-info-icon', 'Upload info icon')
+        self.image_upload_info_title = Text(page, f'{identifier}-image-upload-widget-info-title-text',
                                             'Upload info title')
         self.image_upload_info_description = Text(page,
-                                                  '{identifier}-image-upload-widget-info-description-text',
+                                                  f'{identifier}-image-upload-widget-info-description-text',
                                                   'Upload info description')
 
-        self.upload_button = Button(page, '{identifier}-image-upload-widget-upload-button', 'Upload button')
-        self.remove_button = Button(page, '{identifier}-image-upload-widget-remove-button', 'Remove button')
-        self.upload_input = FileInput(page, '{identifier}-image-upload-widget-input', 'Upload input')
+        self.upload_button = Button(page, f'{identifier}-image-upload-widget-upload-button', 'Upload button')
+        self.remove_button = Button(page, f'{identifier}-image-upload-widget-remove-button', 'Remove button')
+        self.upload_input = FileInput(page, f'{identifier}-image-upload-widget-input', 'Upload input')
 
     def check_visible(self, is_image_uploaded: bool = False):
         self.image_upload_info_icon.check_visible()
