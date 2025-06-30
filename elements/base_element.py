@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page, expect, Locator
 
 
 class BaseElement:
@@ -7,7 +7,7 @@ class BaseElement:
         self.name = name
         self.locator = locator
 
-    def get_locator(self, **kwargs):
+    def get_locator(self, **kwargs) -> Locator:
         locator = self.locator.format(**kwargs)
         return self.page.get_by_test_id(locator)
 
